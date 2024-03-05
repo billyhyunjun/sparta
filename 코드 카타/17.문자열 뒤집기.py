@@ -1,0 +1,12 @@
+def solution(my_string):
+    answer = ''
+    for i in my_string:
+        answer = i + answer
+    return answer
+
+
+a = "jaron"
+# b = 1
+# c = 3
+result = solution(a)
+print(result)
