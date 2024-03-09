@@ -51,8 +51,15 @@
 #     print("#{} {}".format(Count + 1, Answer))
 
 
+#
+# # 입력 리스트
+# input_list = ([100, 200], [300, 500])
+#
+# print(len(input_list))
+# my_dict = {}
+# my_dict["key","a","b"] = [100, 200, 300]
+# print(my_dict)
 
-# 입력 리스트
-input_list = ([100, 200], [300, 500])
-
-print(len(input_list))
+a = [1, 4]
+b = [[1, 4], [1, 2]]
+print(a not in b)
