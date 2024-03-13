@@ -59,7 +59,11 @@
 # my_dict = {}
 # my_dict["key","a","b"] = [100, 200, 300]
 # print(my_dict)
+#
+# a = [1, 4]
+# b = [[1, 4], [1, 2]]
+# print(a not in b)
 
-a = [1, 4]
-b = [[1, 4], [1, 2]]
-print(a not in b)
+a = 1
+b = 0
+print(f"{a}{b}" in ['00', '10', '20', '30', '20', '30'])
