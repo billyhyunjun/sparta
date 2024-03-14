@@ -12,6 +12,7 @@
 # end = time.time()
 #
 # print(f"{end - start:.5f} sec")
+import time
 
 
 # found_text = ['a', 'b', 'b', 'a', 'b', 'a', 'a', 'b']
@@ -63,7 +64,29 @@
 # a = [1, 4]
 # b = [[1, 4], [1, 2]]
 # print(a not in b)
+#
+# a = 1
+# b = 0
+# print(f"{a}{b}" in ['00', '10', '20', '30', '20', '30'])
 
-a = 1
-b = 0
-print(f"{a}{b}" in ['00', '10', '20', '30', '20', '30'])
+# a = "1234"
+# a.
+
+def power(a, b):
+    if b == 0:
+        return 1
+
+    x = power(a, b // 2)
+
+    if b % 2 == 0:
+        return x * x
+
+    else:
+        return x * x * a
+
+
+start = time.time()
+a = 2 ** 2000000000
+# power(2, 2000000000)
+end = time.time()
+print(end - start)
