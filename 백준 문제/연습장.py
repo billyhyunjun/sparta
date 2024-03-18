@@ -69,24 +69,33 @@ import time
 # b = 0
 # print(f"{a}{b}" in ['00', '10', '20', '30', '20', '30'])
 
-# a = "1234"
-# a.
+# # a = "1234"
+# # a.
+#
+# def power(a, b):
+#     if b == 0:
+#         return 1
+#
+#     x = power(a, b // 2)
+#
+#     if b % 2 == 0:
+#         return x * x
+#
+#     else:
+#         return x * x * a
+#
+#
+# start = time.time()
+# a = 2 ** 2000000000
+# # power(2, 2000000000)
+# end = time.time()
+# print(end - start)
+my_list = [('a', 3), ('b', 1), ('c', 2)]
 
-def power(a, b):
-    if b == 0:
-        return 1
+# 리스트의 1번 값(인덱스가 1인 값)을 기준으로 정렬
+sorted_list = sorted(my_list, key=lambda x: x[1])
 
-    x = power(a, b // 2)
-
-    if b % 2 == 0:
-        return x * x
-
-    else:
-        return x * x * a
+print(sorted_list)
 
 
-start = time.time()
-a = 2 ** 2000000000
-# power(2, 2000000000)
-end = time.time()
-print(end - start)
+
