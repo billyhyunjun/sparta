@@ -1,14 +1,11 @@
 def solution(arr):
-    i = 1
-    while i < len(arr):
-        i *= 2
-    answer = [0]*i
-    for j in range(len(arr)):
-        answer[j] = arr[j]
-    return answer
+    arr.remove(min(arr))
+    if not arr:
+        arr.append(-1)
+    return arr
 
 
-a = [1, 2, 3, 4, 5, 6]
+a = [4,3,2,1]
 # b = 20
 # c = True
 # d = True
