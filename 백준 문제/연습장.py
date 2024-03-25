@@ -90,12 +90,23 @@ import time
 # # power(2, 2000000000)
 # end = time.time()
 # print(end - start)
-my_list = [('a', 3), ('b', 1), ('c', 2)]
+# my_list = [('a', 3), ('b', 1), ('c', 2)]
+#
+# # 리스트의 1번 값(인덱스가 1인 값)을 기준으로 정렬
+# sorted_list = sorted(my_list, key=lambda x: x[1])
+#
+# print(sorted_list)
 
-# 리스트의 1번 값(인덱스가 1인 값)을 기준으로 정렬
-sorted_list = sorted(my_list, key=lambda x: x[1])
 
-print(sorted_list)
 
+
+nums = [3, 4, 2, 1]
+
+nums.sort(reverse=True)
+
+# sort_nums = sorted(nums, reverse=True)
+
+# print(sort_nums)
+print(nums)
 
 
