@@ -14,7 +14,12 @@ b = [[3], [4]]
 # c = 20
 # d = 50
 # result = solution(a)
-result = solution(a, b)
+result = sumMatrix(a, b)
 # result = solution(a, b, c)
 # result = solution(a, b, c, d)
 print(result)
+for x in zip(a, b):  # [([1], [3]), ([2], [4])]
+    print(x) # ([1], [3])
+    print(*x) # [1] [3]
+    print(list(zip(*x))) # [(1, 3)]
+    print(list(map(sum, zip(*x)))) # [4]
